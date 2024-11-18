@@ -35,13 +35,31 @@ let string3 = `@gmail.com`;
 let nombre = "Juan";
 let apellido = "Vasquez";
 let nombreCompleto = `hola mi nombre es ${nombre} y mi apellido es ${apellido}`;
-console.log(nombreCompleto);
+// console.log(nombreCompleto);
 
 /*
     las cadenas de plantilla son las que 
     permite expresiones dentro de las cadenas
     con esto se puede usar cadenas de varias 
     lineas y funciones dentro de ellas.
+    y esto se hace con comillas invertidas "``"
 */
+
+let uno = 5;
+let dos = new Number(2);
+let tres = "3.5";
+console.log(dos);
+
+let flotante = 7.1542;
+console.log(flotante.toFixed(1));
+console.log(tres * uno);
+console.log(typeof tres === "number");
+
+
+
+
+// var saludo = "Muchachos";
+// let adso = "2894667"
+// console.log(`Hola ${saludo} ${adso}`);
 
 
