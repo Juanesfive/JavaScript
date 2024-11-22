@@ -41,8 +41,44 @@
 //   alert("si llamarme");
 // })();
 
-const flecha = (a, b) => (a > 20) ? a*b : b;
+// const flecha = (a, b) => (a > 20) ? a*b : b;
 
-let respuesta = flecha(4 ,5);
+// let respuesta = flecha(4 ,5);
 
-console.log(respuesta);
+// console.log(respuesta);
+
+
+const persona = {
+    nombre: "Juan",
+    apellido: "Vasquez",
+    edad: 19,
+    saludar: function () {
+        // console.log(`hola soy ${this.nombre}`);
+        return `hola soy ${this.nombre}`
+    }
+}
+
+persona.pais = 'colombia';
+persona.despedir = function () {
+    return `me despido soy  ${this.nombre}`
+}
+
+
+
+console.log(persona.saludar());
+console.log(persona.despedir());
+
+
+
+// console.log(Object.keys(persona).indexOf("genero") === -1); {
+//     console.log("El atributo no existe");
+    
+// };
+// console.log(`hola me llamo ${persona.nombre}`);
+
+
+console.log(Object.keys(persona).includes("nombre"));
+
+
+//  $ y luego { } para incrustar una expresión en una cadena.
+// Permite funciones de interpolación de cadenas y cadenas multilínea
